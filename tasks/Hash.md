@@ -23,7 +23,7 @@
 
 ```
 def search(source, pattern):
-  if pattern короче source:
+  if source короче pattern:
     return Такой подстроки точно нет!
   found = []
   pattern_hash = сумма кодов символов в pattern без учёта *
