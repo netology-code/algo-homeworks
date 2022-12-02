@@ -61,7 +61,7 @@ dfs(graph, v, mark, marks):
   size = 1
   for vv in graph.adjacent(v):
     if в marks[vv] лежит 0:
-      size += dfs(vv, mark, marks)
+      size += dfs(graph, vv, mark, marks)
   return size
 
 calc_paths(graph):
