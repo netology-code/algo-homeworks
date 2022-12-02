@@ -35,7 +35,7 @@ def search(source, pattern):
     else:
       window_hash -= код символа в source на позиции start-1
       window_hash += код символа в source на позиции start+длина(pattern) - 1
-      window_hash -= код символа в source на позиции start+asterik_position
+      window_hash -= код символа в source на позиции start-1+asterik_position
     if window_hash == pattern_hash:
       for i от 0 до длина(pattern):
         if pattern[i] != '*' И source[start + i] != pattern[i]:
