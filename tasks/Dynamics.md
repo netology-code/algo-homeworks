@@ -58,6 +58,7 @@ x x x * - * - - - *
 ```
 find_path(field, x0, y0):
   path = [n x n значений "нет"]
+  memory = двумерный массив заполненный "?"
   x = x0
   y = y0
   while (x; y) это не (0; 0)
