@@ -117,7 +117,7 @@ public static int countMore(int[] prices, int money) {
             int middle = (left + right) / 2;
             // Ваш код
         }
-        return 0;
+        return 0; // иначе не скомпилится, джава сама не знает бинпоиск
     }
 ```
 
