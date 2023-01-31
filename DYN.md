@@ -19,10 +19,11 @@
 
 ## Материалы, которые пригодятся для выполнения задания
 
-1. Бинарный поиск в [6 алгоритмов поиска на Java: от простого к сложному](https://proglib.io/p/6-search-algorithms-java)
-2. [Как поделиться реплитом для проверки?](https://github.com/netology-code/java-homeworks/blob/java-43/QA_ReplitShare.md)
-3. [Как автоотформатировать код?](https://github.com/netology-code/java-homeworks/blob/java-43/QA_Format.md)
-4. [Как залить проект из IDEA в реплит?](https://github.com/netology-code/java-homeworks/blob/java-43/QA_ReplitUpload.md)
+1. [Рекурсия в Java](https://javarush.com/groups/posts/1895-rekursija-v-java)
+2. [Динамическое программирование для начинающих](https://tproger.ru/articles/dynprog-starters/)
+3. [Как поделиться реплитом для проверки?](https://github.com/netology-code/java-homeworks/blob/java-43/QA_ReplitShare.md)
+4. [Как автоотформатировать код?](https://github.com/netology-code/java-homeworks/blob/java-43/QA_Format.md)
+5. [Как залить проект из IDEA в реплит?](https://github.com/netology-code/java-homeworks/blob/java-43/QA_ReplitUpload.md)
 
 ------
 
