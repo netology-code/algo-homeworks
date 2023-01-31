@@ -102,7 +102,7 @@ public class Main {
 
 Реализуйте метод поиска, основанный на бинарном поиске (таким образом, имеющий `O(log n)` асимптотику):
 ```java
-public static int countMore(int[] prices, int money) {
+    public static int countMore(int[] prices, int money) {
         if (prices[0] > money) {
             return prices.length; // все недоступны
         }
