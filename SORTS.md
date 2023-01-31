@@ -1,0 +1,104 @@
+# Домашнее задание к занятию "Сортировки"
+
+## Цель задания
+
+1. Попрактиковаться в слиянии отсортированных массивов
+
+------
+
+## Инструкция к заданию
+
+1. Для каждой задачи создайте отдельный реплит, если об обратном не сказано в условии
+1. Саму программу вы пишете в IDEA, реплит используется только для сдачи кода
+1. В окне редактора IDEA наберите программный код, решающий поставленную задачу, на основе данной в условии заготовки кода
+1. Загружаете файлы из папки src проекта в реплит
+1. Отправьте выполненную работу на проверку в личном кабинете Нетологии
+
+------
+
+## Материалы, которые пригодятся для выполнения задания
+
+1. Сортировка слиянием в [Алгоритмы сортировки на Java с примерами](https://tproger.ru/articles/algoritmy-sortirovki-na-java-s-primerami)
+3. [Как поделиться реплитом для проверки?](https://github.com/netology-code/java-homeworks/blob/java-43/QA_ReplitShare.md)
+4. [Как автоотформатировать код?](https://github.com/netology-code/java-homeworks/blob/java-43/QA_Format.md)
+5. [Как залить проект из IDEA в реплит?](https://github.com/netology-code/java-homeworks/blob/java-43/QA_ReplitUpload.md)
+
+------
+
+## Задание 1 (обязательное)
+
+### Заготовка кода
+Используйте этот код в качестве заготовки кода вашего проекта. Менять код в `main` нельзя.
+
+```java
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+
+
+    public static void main(String[] args) {
+        compare(1);
+        compare(2);
+        compare(5);
+        compare(15);
+    }
+
+    public static void compare(int day) {
+        System.out.println("=== Day " + day + " ===");
+        int[] startNumbers = { 21, 1, 20, 23 };
+        int iterative = chooseHobbyIterative(startNumbers, day);
+        int recursive = chooseHobbyRecursive(startNumbers, day);
+        System.out.println("Iterative = " + iterative + " | Recursive = " + recursive);
+        System.out.println();
+    }
+
+    public static int chooseHobbyRecursive(int[] startNumbers, int day) {
+//        int prev = ??? // предыдущее значение
+//        int prePrePrev = ??? // пре-пре-предыдущее значение
+//        return prev * ...;
+    }
+
+    public static int chooseHobbyIterative(int[] startNumbers, int day) {
+        List<Integer> numbers = new ArrayList<>();
+
+        numbers.add(startNumbers[0]);
+        numbers.add(startNumbers[1]);
+        numbers.add(startNumbers[2]);
+        numbers.add(startNumbers[3]);
+
+        for (int d = 0; d < day; d++) {
+            int index = d + 4; // индексы дней в массиве сдвинуты на 4
+            int prev = numbers.get(index - 1); // предыдущее значение
+            int prePrePrev = numbers.get(index - 3); // пре-пре-предыдущее значение
+            numbers.add((prev * prePrePrev) % 10 + 1);
+        }
+
+        return numbers.get(numbers.size() - 1);
+    }
+}
+```
+
+### Алгоритм
+
+
+
+------
+
+
+## Правила приема работы
+
+Прикреплён реплит с решением задачи
+
+------
+
+## Критерии оценки
+
+1. Программа оформлена на основе заготовки кода, предоставленной в условии
+1. Программа запускается и отрабатывает без ошибок
+2. Программа соответствует всем требованиям из условия задачи
+3. Программа работает правильно на всех примерах из условия
+4. Программный код соответствует пройденным требованиям к качеству кода
+5. Программа спроектирована достаточно логично и правильно, не противоречит общепринятым в производстве практикам и традициям
+6. Программа реализует достаточный для зачёта по эффективности алгоритм
+7. При наличии недочётов, в зависимости от их серьёзности и количества, работа может быть отправлена на доработку или принята; решение принимается на основе экспертной оценки работы.
