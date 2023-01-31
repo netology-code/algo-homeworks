@@ -115,7 +115,12 @@ public class Main {
         int right = prices.length - 1;
         while (left < right) {
             int middle = (left + right) / 2;
-            // Ваш код
+            
+            // Ваш код:
+            // Если в middle первый недоступный товар, вернуть размер массива минус middle
+            // Если в middle доступная книга, то искать нужно правее - left = middle + 1
+            // Если в middle недоступная книга, то искать нужно левее - right = middle - 1
+            
         }
         return 0; // иначе не скомпилится, джава сама не знает бинпоиск
     }
