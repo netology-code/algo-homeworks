@@ -130,8 +130,7 @@ public class Graph<T> {
 
     public void createEdge(Vertex<T> a, Vertex<T> b) {
         // добавляем их друг друга в их списки смежности
-        a.getAdjacent().add(b);
-        b.getAdjacent().add(a);
+        // ВАШ КОД
     }
 
     public boolean isConnected(Vertex<T> a, Vertex<T> b) {
