@@ -133,8 +133,6 @@ public class LinkedStack {
 
 ```
 
-### Алгоритм
-
 ------
 
 
