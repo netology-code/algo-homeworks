@@ -138,13 +138,13 @@ public class Graph<T> {
     }
 
     // метод отвечает на вопрос, нашли ли мы обходом из v вершину target с учётом
-    // посещённых вершин, которые записаны в memory
-    public boolean dfsFind(Vertex<T> v, Vertex<T> target, Set<Vertex<T>> memory) {
+    // посещённых вершин, которые записаны в visited
+    public boolean dfsFind(Vertex<T> v, Vertex<T> target, Set<Vertex<T>> visited) {
         // если вершина в которую зашли (v) это та которую мы искали (target), то поиск закончен
         if (v.equals(target)) {
             return true; // нашли
         }
-        memory.add(v); // запоминаем вершину которую посетили
+        visited.add(v); // запоминаем вершину которую посетили
         
         // ВАШ КОД
         // перебираем все смежные вершины у v
