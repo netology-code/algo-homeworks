@@ -41,7 +41,7 @@ import java.io.*;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        Stack stack = new Stack();
+        LinkedStack stack = new LinkedStack();
 
         System.out.println(stack); // EMPTY
 
@@ -94,7 +94,7 @@ public class Node {
 
 Заготовка вашего класса стека с теми методами что вам предстоит реализовать выглядит так:
 ```java
-public class Stack {
+public class LinkedStack {
     private Node tail; // ссылка на последний добавленный узел (обёртку)
     private int size; // размер стека, т.е. количество элементов в нём
 
