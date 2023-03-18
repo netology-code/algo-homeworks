@@ -42,7 +42,6 @@ def search(source, pattern):
         if pattern[i] != '*' И source[start + i] != pattern[i]:
           не подходит
       если подошёл, то добавим start в found
-    window_hash += код символа в source на позиции start+asterik_position
   return found
 ```
 
