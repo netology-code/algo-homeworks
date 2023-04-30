@@ -123,7 +123,7 @@ public class Main {
 
 Заведите дополнительный параметр в `chooseHobbyRecursive` - массив для запоминания результатов вызовов чтобы переиспользовать эти данные при повторяющихся вызовах:
 ```java
-public static int chooseHobbyIterative(int[] startNumbers, int day, int[] memory) {
+public static int chooseHobbyRecursive(int[] startNumbers, int day, int[] memory) {
     ...
 }
 ```
@@ -132,7 +132,7 @@ public static int chooseHobbyIterative(int[] startNumbers, int day, int[] memory
 
 При вызове в `compare` передайте туда массив из нулей соответствующего размера (тк при начале подсчёта мы ещё ничего не запомнили):
 ```java
-        int iterative = chooseHobbyIterative(startNumbers, day, new int[day]);
+        int iterative = chooseHobbyRecursive(startNumbers, day, new int[day]);
 ```
 
 В начале рекурсивного вызова проверьте, нет ли в `memory` уже сохранённого значения для текущего значения параметра.
