@@ -87,7 +87,7 @@ import java.util.Objects;
 
 public class Vertex<T> {
     private T value;
-    private List<Vertex> adjacent = new ArrayList<>(); // список смешности
+    private List<Vertex> adjacent = new ArrayList<>(); // список смежности
 
     public Vertex(T value) {
         this.value = value;
