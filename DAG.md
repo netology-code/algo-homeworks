@@ -100,7 +100,7 @@ public class Vertex<T> {
         this.value = value;
     }
 
-    public List<Vertex> getAdjacent() {
+    public List<Vertex<T>> getAdjacent() {
         return adjacent;
     }
 
